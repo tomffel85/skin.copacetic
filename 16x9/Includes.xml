@@ -2519,8 +2519,6 @@
 
 	<!-- Clock -->
 	<include name="Clock">
-    <param name="backgroundcolor" default="$VAR[AccentColor]"/>
-    <param name="backgroundopacity" default="views/white_100.png"/>
     <param name="textcolor" default="$VAR[LightColor]"/>
     <definition>
       <control type="group">
@@ -2554,7 +2552,7 @@
     				<font>Main_Menu_Unfocused</font>
     				<align>right</align>
     				<textcolor>$PARAM[textcolor]</textcolor>
-    				<label>$INFO[System.Time(mm)]</label>
+    				<label> / $INFO[System.Time(mm)]</label>
     			</control>
     		</control>
       </control>
